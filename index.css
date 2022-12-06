@@ -1,8 +1,43 @@
+
+body{
+    background:linear-gradient(150deg, rgb(60, 211, 135) 0%, rgb(31, 19, 32) 100%);
+    text-align: center;
+    color: rgb(31, 28, 80);
+}
 .btn {
     margin-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 24px;
     height: 24px;
     background-color: red;
     border-radius: 50%;
+}
+h1{
+    color: rgb(2, 9, 49);
+    text-shadow: 0 5px 9px rgb(0, 0, 0);
+}
+p{
+    padding: 5px;
+}
+h5{
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 0;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container div{
+    background: linear-gradient(150deg, rgba(153, 97, 83, 1) 0%, rgba(254, 254, 254, 1) 100%);
+    width: 200px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 10px black;
+}
+#dataLikes{
+    margin-left: 10px;
 }

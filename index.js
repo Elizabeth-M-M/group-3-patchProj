@@ -9,7 +9,7 @@ function displayData(data){
     <img src="${data.image}" style = "width:200px; height:200px" alt="...">
     <h5 class="card-title">${data.title}</h5>
     <p class="card-text">${data.summary}</p>
-    <p><button class="btn"></button><span>likes</span><span id='dataLikes'> ${data.likes}</span></p>`
+    <p><button class="btn"></button><span>likes</span><span id='dataLikes'>${data.likes}</span></p>`
     container.appendChild(card)
     card.querySelector(".btn").addEventListener("click", (e) => {
         e.preventDefault()
