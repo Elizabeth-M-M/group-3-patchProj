@@ -1,6 +1,8 @@
 
 body{
     background:linear-gradient(150deg, rgb(60, 211, 135) 0%, rgb(31, 19, 32) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
     text-align: center;
     color: rgb(31, 28, 80);
 }
@@ -23,6 +25,7 @@ h5{
     font-size: 17px;
     margin: 10px 0;
     padding: 0;
+    
 }
 .card-container{
     display: flex;
@@ -33,7 +36,7 @@ h5{
     width: 200px;
     height: 400px;
     margin: auto;
-    border-radius: 10%;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     box-shadow: 0 10px 10px black;

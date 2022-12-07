@@ -1,6 +1,8 @@
-fetch("http://localhost:3000/movies")
-.then(response => response.json())
-.then(data => data.forEach(data => displayData(data)))
+
+    fetch("http://localhost:3000/movies")
+        .then(response => response.json())
+        .then(data => data.forEach(data => displayData(data)))
+
 
 function displayData(data){
     const container = document.querySelector(".card-container")
@@ -22,11 +24,10 @@ function displayData(data){
 function updateLikes(data){
     fetch(`http://localhost:3000/movies/${data.id}`, {
         method: 'PATCH',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
-
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({"likes": data.likes})
     })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => console.log(data) )
 }
 
